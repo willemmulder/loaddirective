@@ -7,13 +7,13 @@ Imagine you have a view, and you want it to load a directive, which name is stor
 Naively, you would want it to work like 
 
 ```html
-<div {{directiveNameInScope}}></div>
+<div {{variableInScopeThatContainsDirectiveName}}></div>
 ```
 
 But that doesn't work. So I created a directive to do it for you. It works like
 
 ```html
-<div loaddirective="directiveNameInScope"></div>
+<div loaddirective="variableInScopeThatContainsDirectiveName"></div>
 ```
 
 where the loaddirective directive looks like
